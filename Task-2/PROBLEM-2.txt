@@ -1,0 +1,20 @@
+Function Main
+    Declare Integer Nterms
+    Declare Integer FN, F0, F1, F2, F3
+    Declare Integer count
+    
+    Output "ENTER THE NUMBER OF TERMS"
+    Input Nterms
+    Assign F0 = 0
+    Assign F1 = 1
+    Assign F2 = 1
+    Assign count = 0
+    Assign F3 = 2
+    While count<nterms-2
+        Assign FN = F1+F2
+        Assign F1 = F2
+        Assign F2 = FN
+        Assign count = count+1
+    End
+    Output FN
+End
